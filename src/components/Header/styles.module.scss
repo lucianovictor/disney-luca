@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  img {
+    position: absolute;
+    width: 130px;
+    height: 74px;
+    left: 131px;
+    top: 40px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    left: 2385.8px;
+    top: 50px;
+  }
+ }
