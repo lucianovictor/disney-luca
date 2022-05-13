@@ -1,7 +1,10 @@
+import { Movies } from 'components/Movies'
+
 import styles from './styles.module.scss'
 
 export const Main = () => (
   <main className={styles.container}>
+    <div className={styles.content__movie}></div>
     <div className={styles.info}>
       <img src="IMDB-icon.png" alt="" />
       <h1>8.8</h1>
@@ -20,5 +23,6 @@ export const Main = () => (
         <img src="icons/play.svg" alt="" /> Watch Now
       </button>
     </div>
+    <Movies />
   </main>
 )
