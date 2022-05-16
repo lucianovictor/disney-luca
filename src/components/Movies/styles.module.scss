@@ -6,11 +6,11 @@
     position: absolute;
     width: 103px;
     height: 34px;
-    left: 2300px;
+    left: 2120px;
     right: 0;
-    top: 200px;
+    top: 130px;
 
-    font-size: 1.75rem;
+    font-size: 2.125rem;
     font-weight: 700;
     line-height: 2.125rem;
     color: var(--primary);
@@ -18,7 +18,8 @@
 }
 
 .movies {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   position: absolute;
   width: 310px;
   height: 740px;
@@ -27,18 +28,60 @@
 }
 
 .movie {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
 
   img {
-    display: flex;
-
+    display: grid;
+    position: relative;
+    top: -310px;
+    left: 595px;
     width: 265px;
     height: 150px;
     bottom: 19.74px;
+    padding: 3px;
     opacity: 0.8;
     border-radius: 8px;
+    object-fit: cover;
+    // animation-delay:;
+    transition: all 0.4s;
   }
+  &:hover {
+    cursor: pointer;
+
+    span img {
+      filter: grayscale(0);
+      transform: scale(1.2);
+    }
+
+    .movie__description {
+      transform: translateY(0);
+    }
+  }
+
 }
+
+// .movie__description {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+
+//   width: 100%;
+//   padding: 20px;
+//   background: rgba(0, 0, 0, 0.7);
+
+//   transition: transform 0.4s 0.2s;
+//   transform: translateY(110px);
+
+//   strong {
+//     font-size: 1.25rem;
+//     line-height: 1.875rem;
+//     color: var(--primary);
+//     font-weight: 600;
+
+//     margin-bottom: 6px;
+//   }
+// }
+
 

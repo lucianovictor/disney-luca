@@ -11,8 +11,10 @@ export const Movies = () => (
           <span>
             <img src={movies.image} alt={`imagens dos filmes ${movies.name}`} />
           </span>
-          <strong>{movies.name}</strong>
-          <p>{movies.category}</p>
+          <div className={styles.movie__description}>
+            <strong>{movies.name}</strong>
+            <p>{movies.category}</p>
+          </div>
         </div>
       ))}
     </div>
