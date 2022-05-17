@@ -1,6 +1,6 @@
 .container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url('/background.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -79,12 +79,12 @@
 }
 
 .button {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  position: relative;
   border-radius: 5rem;
+  border: none;
   background: linear-gradient(154.23deg, #0f3a7b -58.45%, #0cffff 374.49%);
   box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.160784);
 
@@ -92,7 +92,5 @@
   height: 70px;
   left: 130px;
   top: 578px;
-
-  border: none;
 
 }
