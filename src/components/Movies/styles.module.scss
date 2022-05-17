@@ -33,7 +33,7 @@
   justify-content: center;
 
   img {
-    display: grid;
+    display: flex;
     position: relative;
     top: -310px;
     left: 595px;
@@ -44,7 +44,6 @@
     opacity: 0.8;
     border-radius: 8px;
     object-fit: cover;
-    // animation-delay:;
     transition: all 0.4s;
   }
   &:hover {
@@ -52,7 +51,7 @@
 
     span img {
       filter: grayscale(0);
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     .movie__description {
@@ -61,27 +60,4 @@
   }
 
 }
-
-// .movie__description {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-
-//   width: 100%;
-//   padding: 20px;
-//   background: rgba(0, 0, 0, 0.7);
-
-//   transition: transform 0.4s 0.2s;
-//   transform: translateY(110px);
-
-//   strong {
-//     font-size: 1.25rem;
-//     line-height: 1.875rem;
-//     color: var(--primary);
-//     font-weight: 600;
-
-//     margin-bottom: 6px;
-//   }
-// }
-
 
