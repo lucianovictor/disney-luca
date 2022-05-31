@@ -21,6 +21,29 @@ html {
   --linear: linear-gradient(154.23deg, #0F3A7B -58.45%, #0CFFFF 374.49%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080A0B;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  /* Track */
+  &::-webkit-scrollbar-tracke {
+    background: transparent;
+    border-radius: 0.25rem;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 0.375rem;
+  }
+}
+
 body, button, textarea, input {
   font: 400 1rem "Montserra", sans-serif;
 }
