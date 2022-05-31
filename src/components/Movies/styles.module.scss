@@ -4,33 +4,31 @@
   row-gap: 24px;
 
   h2 {
-    display: flex;
     position: absolute;
     height: 34px;
-    left: 2122px;
-    top: 211px;
-    font-family: 'Montserrat';
-    font-size: 1.75rem;
+    left: 2027px;
+    top: 222px;
+    font-size: 2rem;
     line-height: 2.124rem;
     font-weight: 700;
     color: var(--primary);
   }
+}
 
-  div {
-    height: 640px;
-    overflow: auto;
-    padding-right: 44px;
+.content {
+  height: 640px;
+  overflow: auto;
+  padding-right: 44px;
+
+  &::-webkit-scrollbar {
+    width: 0.3rem;
   }
 
-  div::-webkit-scrollbar {
-    width: 0.2rem;
-  }
-
-  div::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.4);
   }
 
-  div::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background: var(--primary);
   }
 
@@ -49,11 +47,10 @@
     padding-left: 10px;
     padding-bottom: 16px;
     width: 265px;
-    height: 149px;
-    left: 1990px;
+    height: 150px;
+    left: 1895px;
     top: 228.38px;
-    // width: 265px;
-    // height: 150px;
+    background: black;
     border-radius: 8px;
     color: var(--primary);
   }
