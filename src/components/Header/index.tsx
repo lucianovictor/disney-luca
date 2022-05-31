@@ -1,10 +1,14 @@
 import styles from './styles.module.scss'
 
 export const Header = () => (
-  <header className={styles.container}>
-    <img src="logo.png" alt="Logo da Disney" />
-    <nav className={styles.navigation}>
-      <img src="menu.svg" alt="Menu Hamburguer " />
-    </nav>
-  </header>
+  <div className={styles.container}>
+    <header>
+      <img src="logo.png" alt="Logo da Disney" />
+      <button type="button" className={styles.button__menu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+  </div>
 )
