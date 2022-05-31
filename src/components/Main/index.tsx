@@ -4,25 +4,22 @@ import styles from './styles.module.scss'
 
 export const Main = () => (
   <main className={styles.container}>
-    <div className={styles.content__movie}></div>
-    <div className={styles.info}>
-      <img src="IMDB-icon.png" alt="" />
-      <h1>8.8</h1>
-      <h2>2021 - Kids - Movie</h2>
-    </div>
-
-    <div className={styles.content}>
-      <img src="luca.png" alt="Logo Name Luca " />
+    <section className={styles.movie}>
+      <div className={styles.rating}>
+        <img src="IMDB-icon.png" alt="" />
+        <strong>8.8</strong>
+      </div>
+      <span>2021 - Kids - Movie</span>
+      <h1>Luca</h1>
       <p>
+        {' '}
         Luca and Alberto dream of a life of freedom, a life of adventure — and,
         most of all, a life with a Vespa to ride.{' '}
       </p>
-    </div>
-    <div className={styles.button}>
-      <button type="button">
-        <img src="icons/play.svg" alt="" /> Watch Now
-      </button>
-    </div>
+    </section>
+    <button type="button" className={styles.button}>
+      <img src="icons/play.svg" alt="" /> Watch Now
+    </button>
     <Movies />
   </main>
 )
